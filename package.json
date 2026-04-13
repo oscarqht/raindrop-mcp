@@ -1,0 +1,38 @@
+{
+  "name": "raindrop-mcp",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker MCP server for the Raindrop.io REST API",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "cf-typegen": "wrangler types",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarqht/raindrop-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/oscarqht/raindrop-mcp/issues"
+  },
+  "homepage": "https://github.com/oscarqht/raindrop-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4",
+    "wrangler": "^4.81.1"
+  }
+}
